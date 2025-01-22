@@ -1,0 +1,65 @@
+.move-list {
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.move-list h3 {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.moves {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.moves::-webkit-scrollbar {
+  width: 8px;
+}
+
+.moves::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.moves::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.moves::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.move-entry {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.move-entry:hover {
+  background-color: #f8f9fa;
+}
+
+.move-number {
+  color: #6c757d;
+  font-weight: bold;
+  margin-right: 12px;
+  min-width: 40px;
+  text-align: right;
+}
+
+.move-notation {
+  font-family: 'Consolas', monospace;
+  font-size: 14px;
+  color: #212529;
+  flex-grow: 1;
+}

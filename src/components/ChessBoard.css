@@ -1,0 +1,35 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 100%; /* Set to full width */
+  height: auto; /* Allow height to adjust based on content */
+  /* Removed max-height to ensure full visibility */
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.light {
+  background-color: #f0d9b5;
+}
+
+.dark {
+  background-color: #b58863;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.move-list {
+  margin-top: 20px;
+}

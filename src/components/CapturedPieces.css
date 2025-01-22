@@ -1,0 +1,22 @@
+.captured-pieces {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .captured-pieces-label {
+    color: #fff;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+  .captured-pieces-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .captured-piece {
+    transform: scale(0.7);
+  }

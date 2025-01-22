@@ -1,0 +1,91 @@
+.square {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.square.light {
+    background-color: #eeeed2;
+}
+
+.square.dark {
+    background-color: #769656;
+}
+
+.square:hover {
+    transform: scale(1.02);
+    box-shadow: inset 0 0 20px rgba(255, 255, 0, 0.3);
+}
+
+.square.selected {
+    background-color: #baca44;
+    box-shadow: inset 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+.piece {
+    font-size: 50px;
+    transition: all 0.2s ease;
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Add highlight for possible moves */
+.square.possible-move {
+    position: relative;
+}
+
+.square.possible-move::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.square.possible-capture::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+/* Add to existing Square.css */
+.legal-move-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+  }
+  
+  .capture-indicator {
+    width: 100%;
+    height: 100%;
+    border: 4px solid rgba(255, 0, 0, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .undo-button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .undo-button:hover {
+    background: #357abd;
+  }

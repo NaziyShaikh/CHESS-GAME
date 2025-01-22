@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+  flex: 0 0 auto;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel, .right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.current-player {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.undo-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.undo-button:hover {
+  background-color: #357abd;
+}
+
+.timer {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.move-list {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.move-list h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.move {
+  padding: 8px;
+  margin: 5px 0;
+  background: #f5f5f5;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.move:hover {
+  background: #e0e0e0;
+  transform: translateX(5px);
+}

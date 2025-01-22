@@ -1,0 +1,139 @@
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.preview-header {
+  margin-bottom: 20px;
+}
+
+.preview-header h2 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+.preview-board {
+  border: 2px solid #333;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.preview-row {
+  display: flex;
+  align-items: center;
+}
+
+.preview-square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.light {
+  background-color: #f0d9b5;
+}
+
+.dark {
+  background-color: #b58863;
+}
+
+.piece {
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.piece.white {
+  color: #ffffff;
+  text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.piece.black {
+  color: #000000;
+  text-shadow: 
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.header-row {
+  height: 30px;
+}
+
+.file-label, .rank-label {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+
+.corner {
+  width: 30px;
+  height: 30px;
+}
+
+.preview-moves {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.preview-moves h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.moves-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.move-entry {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.move-number {
+  color: #666;
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 40px;
+}
+
+.move-text {
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.piece:hover {
+  transform: scale(1.1);
+}
