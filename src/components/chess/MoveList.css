@@ -1,65 +1,47 @@
 .move-list {
-  width: 200px;
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .move-list h3 {
-  margin: 0 0 10px 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
   text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
 }
 
-.moves {
-  max-height: 300px;
-  overflow-y: auto;
-  padding-right: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
-}
-
-.moves::-webkit-scrollbar {
-  width: 8px;
-}
-
-.moves::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-.moves::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-.moves::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.moves-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
 }
 
 .move-entry {
   display: flex;
   align-items: center;
+  background-color: white;
+  border-radius: 4px;
   padding: 8px;
-  border-bottom: 1px solid #eee;
-  transition: background-color 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .move-entry:hover {
-  background-color: #f8f9fa;
+  background-color: #f0f0f0;
 }
 
 .move-number {
-  color: #6c757d;
   font-weight: bold;
-  margin-right: 12px;
-  min-width: 40px;
-  text-align: right;
+  margin-right: 10px;
+  color: #666;
 }
 
 .move-notation {
-  font-family: 'Consolas', monospace;
-  font-size: 14px;
-  color: #212529;
-  flex-grow: 1;
+  color: #333;
 }
